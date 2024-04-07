@@ -2,11 +2,7 @@ html, body {
     height: fit-content;
 }
 
-a {
-    width: fit-content;
-}
-
-img {
+.release a, img {
     width: 100%;
 }
 
@@ -39,6 +35,10 @@ body,
     gap: .5em;
 }
 
+.tracklist {
+    overflow-y: scroll;
+}
+
 .tracklist a {
     border: none;
     font-weight: bold;
@@ -51,7 +51,12 @@ body,
 
 @media only screen and (max-width: 1200px) {
     .tracklist {
-        overflow-y: scroll;
+        height: 314px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .tracklist {
         height: 200px;
     }
 }
