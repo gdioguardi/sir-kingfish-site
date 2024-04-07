@@ -35,10 +35,6 @@ body,
     gap: .5em;
 }
 
-.tracklist {
-    overflow-y: scroll;
-}
-
 .tracklist a {
     border: none;
     font-weight: bold;
@@ -51,12 +47,14 @@ body,
 
 @media only screen and (max-width: 1200px) {
     .tracklist {
+        overflow-y: scroll;
         height: 314px;
     }
 }
 
 @media only screen and (max-width: 990px) {
     .tracklist {
+        overflow-y: scroll;
         height: 200px;
     }
 }
