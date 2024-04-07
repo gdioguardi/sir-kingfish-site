@@ -2,8 +2,12 @@ html, body {
     height: fit-content;
 }
 
+a {
+    width: fit-content;
+}
+
 img {
-    width: 75%;
+    width: 100%;
 }
 
 body,
@@ -26,7 +30,7 @@ body,
 }
 
 .release,
-.tracklist li {
+.tracklist a {
     background-color: #F4F4F6;
     color: #212529;
 }
@@ -35,7 +39,7 @@ body,
     gap: .5em;
 }
 
-.tracklist li {
+.tracklist a {
     border: none;
     font-weight: bold;
     text-align: center;
@@ -43,12 +47,6 @@ body,
 
 #footer p {
     text-align: center;
-}
-
-@media only screen and (max-width: 992px) {
-    img {
-        width: 100%;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
