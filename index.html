@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html class="h-100" lang="en">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Sir Kingfish</title>
 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body style="background-color: #02020B;" class="h-100">
-        <div style="background-color: #02020B;" class="sticky-top navbar navbar-expand-sm navbar-dark">
-            <a style="color: #F4F4F6; font-weight: bold;" class="navbar-brand" href="#">SIR KINGFISH</a>
+    <body>
+        <div class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <a class="navbar-brand" href="#">SIR KINGFISH</a>
+            
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
                 <div class="navbar-nav">
-                    <a style="color: #F4F4F6;" class="nav-item nav-link" href="#releases">Releases</a>
-                    <a style="color: #C9C9CA;" class="nav-item nav-link disabled" href="#">Socials</a>
-                    <a style="color: #C9C9CA;" class="nav-item nav-link disabled" href="#">Pictures</a>
+                    <!-- TODO: Add an about section. Maybe at least credit the cover artists and describe who is on what instruments. -->
+                    <a class="nav-item nav-link enabled" href="#releases">Releases</a>
+                    <!-- <a class="nav-item nav-link disabled" href="#">Social</a>
+                    <a class="nav-item nav-link disabled" href="#">Gallery</a> -->
+                    <a class="nav-item nav-link enabled" href="https://open.spotify.com/artist/2Xfx9m547hFPRlGuOmSw5s?si=F23igy6BSlinJKFmictM4g">Stream</a>
                 </div>
             </div>
         </div>
@@ -26,57 +32,67 @@
             <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/TKg3WS9fEnM?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     
-        <div style="background-color: #02020B;" id="releases" class="container-fluid">
-            <h1 style="text-align: center; color: #F4F4F6; font-weight: bold;" class="h1 mb-3">RELEASES</h1>
+        <!-- TODO: Visitors should be able to download the tracks. -->
+        <div id="releases" class="container-fluid">
+            <h1 class="section-header mb-3">RELEASES</h1>
+
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <div style="gap: .5em; background-color: #F4F4F6;" class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 mb-3 p-2">
-                    <img class="w-75" src="images/froots-cover.jpg" alt="Poorly drawn fruit bowl">
-                    <ul class="list-group list-group-flush w-100">
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Froots</li>
-                    </ul>
+                <div class="release d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 mb-3 p-2">
+                    <a href="https://open.spotify.com/album/6jlAXeX2pZyOdXv6od9TZe?si=d9wvJXfySdO9sJM9iyio6w">
+                        <img src="images/froots-cover.jpg" alt="Poorly drawn fruit bowl">
+                    </a>
+                    <div class="tracklist list-group list-group-flush w-100">
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/2LGwzzRgK9K0iPXZ09qwui?si=3191527fcbca4131">Froots (4:20)</a>
+                    </div>
                 </div>
-                <div style="gap: .5em; background-color: #F4F4F6;" class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 mb-3 p-2">
-                    <img class="w-75" src="images/knobhead-cover.png" alt="Man with a knob for a head burying something during a stormy night">
-                    <ul class="list-group list-group-flush w-100">
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Dirt Koffer</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Knobhead</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Bollock Synthesizer</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Suck Shit</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Buzzy Bees</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Outdustrial</li>
-                    </ul>
+
+                <div class="release d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 mb-3 p-2">
+                    <a href="https://open.spotify.com/album/3zMAIT03uuvFD29TzKHbNh?si=SBMFPSrARpiD17YRNXKBWg">
+                        <img src="images/knobhead-cover.png" alt="Man with a knob for a head burying something during a stormy night">
+                    </a>
+                    <div class="tracklist list-group list-group-flush w-100">
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/3NfLKnuYd04IBshhNPV5uL?si=0aa3f22faeb54fdd">Dirt Koffer (3:19)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/4FUomCsLo7EBkFfVKMv3nP?si=585e746b195641cb">Knobhead (2:22)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/5az394h3ZdRX5hDOJQVB1t?si=43fc1bdf2cae461a">Bollock Synthesizer (3:18)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/57EaVSTF0r8Hjb3pujJZfH?si=130e26cf855349e9">Suck Shit (2:04)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/75GXWM1EvqjuO4Ndha5s6Z?si=72f23daa5f8c4032">Buzzy Bees (3:44)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/0T2lgGLOkT3p3FQIZI7mUx?si=168f7db4d63044bb">Outdustrial (4:10)</a>
+                    </div>
                 </div>
-                <div style="gap: .5em; background-color: #F4F4F6;" class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 p-2">
-                    <img class="w-75" src="images/mob-function-cover.png" alt="Emu using its beak like a turntable's needle">
-                    <ul class="list-group list-group-flush w-100">
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Soil Spitter</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Plan Man</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Rutger's Rotors</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Crisp Rat</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Meat Stalker</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">The Ghost of Parties Past</li>
-                        <li style="border: none; background-color: #F4F4F6; font-weight: bold; text-align: center;" class="list-group-item">Emu</li>
-                    </ul>
+
+                <div class="release d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 p-2">
+                    <a href="https://open.spotify.com/album/5SriEX4TSvgQ8wYU0ydLCu?si=vIMjmc8HTv2a2AR4B1LWRQ">
+                        <img src="images/mob-function-cover.png" alt="Emu using its beak like a turntable's needle">
+                    </a>
+                    <div class="tracklist list-group list-group-flush w-100">
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/2IKkJNJn7Gst3E9ZeD8LKq?si=4c791ac3b10d49cd">Soil Spitter (3:23)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/1ZMVsNQ6ERWiGiMU6NxGKo?si=23a9c58d36b745d0">Plan Man (4:06)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/7wSEy6bLgR9qmolJQ5uLnk?si=b96d9c20ec684a7d">Rutger's Rotors (3:16)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/183RHyH6QPtei6sB9Z3f4A?si=5b1597c13155474a">Crisp Rat (3:12)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/5FRiyvZNB3XvSxQFIvpiss?si=2ffa15da36754897">Meat Stalker (4:14)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/1wwFH5VkZ6gr3dN6zr800T?si=5cc943b15a704fbc">The Ghost of Parties Past (3:42)</a>
+                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/6DSy6k7FqB9cdiaunsp8z8?si=5f17a6236ea54a50">Emu (4:30)</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- <div id="socials" class="h-25 container-fluid">
-            <h1 style="text-align: center;">SOCIALS</h1>
+        <!-- <div id="social" class="h-25 container-fluid">
+            <h1 style="text-align: center;">SOCIAL</h1>
             <div class="">
                 <p>COMING SOON</p>
             </div>
         </div>
 
-        <div id="pictures" class="h-25 container-fluid">
-            <h1 style="text-align: center;">PICS</h1>
+        <div id="gallery" class="h-25 container-fluid">
+            <h1 style="text-align: center;">GALLERY</h1>
             <div class="">
                 <p>COMING SOON</p>
             </div>
         </div> -->
 
-        <div style="background-color: #02020B" id="footer" class="container-fluid">
-            <p style="text-align: center; background-color: #02020B; color: #F4F4F6;" class="m-0 p-2">&copy; SIR KINGFISH 2024</p>
+        <div id="footer" class="container-fluid">
+            <p class="m-0 p-2">&copy; SIR KINGFISH 2024</p>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

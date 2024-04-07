@@ -1,0 +1,57 @@
+html, body {
+    height: fit-content;
+}
+
+a {
+    width: fit-content;
+}
+
+img {
+    width: 100%;
+}
+
+body,
+.navbar {
+    background-color: #02020B;
+    color: #F4F4F6
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-item.enabled {
+    color: #F4F4F6 !important;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.release,
+.tracklist a {
+    background-color: #F4F4F6;
+    color: #212529;
+}
+
+.release {
+    gap: .5em;
+}
+
+.tracklist a {
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+#footer p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tracklist {
+        overflow-y: scroll;
+        height: 200px;
+    }
+}
