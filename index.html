@@ -1,102 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sir Kingfish</title>
+  <head>
+    <title>Sir Kingfish</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="navbar navbar-expand-sm navbar-dark sticky-top">
-            <a class="navbar-brand" href="#">SIR KINGFISH</a>
-            
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">SIR KINGFISH</a>
 
-            <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <!-- TODO: Add an about section. Maybe at least credit the cover artists and describe who is on what instruments. -->
-                    <a class="nav-item nav-link enabled" href="#releases">Releases</a>
-                    <!-- <a class="nav-item nav-link disabled" href="#">Social</a>
-                    <a class="nav-item nav-link disabled" href="#">Gallery</a> -->
-                    <a class="nav-item nav-link enabled" href="https://open.spotify.com/artist/2Xfx9m547hFPRlGuOmSw5s?si=F23igy6BSlinJKFmictM4g">Stream</a>
-                </div>
-            </div>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        id="navbarNavAltMarkup"
+        class="collapse navbar-collapse justify-content-between"
+      >
+        <div class="navbar-nav">
+          <!-- TODO: Add an about section. Maybe at least credit the cover artists and describe who is on what instruments. -->
+          <a class="nav-item nav-link enabled" href="#releases">Releases</a>
+          <a class="nav-item nav-link enabled" href="#gallery">Gallery</a>
+          <a class="nav-item nav-link enabled" href="#contact">Contact</a>
         </div>
 
-        <div class="embed-responsive embed-responsive-21by9 mb-3">
-            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/TKg3WS9fEnM?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link enabled"
+            href="https://open.spotify.com/artist/2Xfx9m547hFPRlGuOmSw5s?si=F23igy6BSlinJKFmictM4g"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-spotify"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+              />
+            </svg>
+          </a>
+          <a
+            class="nav-item nav-link enabled"
+            href="https://www.instagram.com/sir.kingfish/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              />
+            </svg>
+          </a>
+          <a
+            class="nav-item nav-link enabled"
+            href="https://www.tiktok.com/@sir.kingfish?lang=en"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-tiktok"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+              />
+            </svg>
+          </a>
+          <a
+            class="nav-item nav-link enabled"
+            href="https://www.youtube.com/channel/UCuZ70ikQpOjGVGeXXuH9e2Q"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-youtube"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              />
+            </svg>
+          </a>
         </div>
-    
-        <!-- TODO: Visitors should be able to download the tracks. -->
-        <div id="releases" class="container-fluid">
-            <h1 class="section-header mb-3">RELEASES</h1>
+      </div>
+    </div>
 
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <div class="release d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 mb-3 p-2">
-                    <a href="https://open.spotify.com/album/6jlAXeX2pZyOdXv6od9TZe?si=d9wvJXfySdO9sJM9iyio6w">
-                        <img src="images/froots-cover.jpg" alt="Poorly drawn fruit bowl">
-                    </a>
-                    <div class="tracklist list-group list-group-flush w-100">
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/2LGwzzRgK9K0iPXZ09qwui?si=3191527fcbca4131">Froots (4:20)</a>
-                    </div>
-                </div>
+    <div class="embed-responsive embed-responsive-21by9 mb-3">
+      <iframe
+        width="2543"
+        height="1158"
+        src="https://www.youtube.com/embed/fCeWQ3PZ9VM"
+        title="Sir Kingfish - Boyd (Official Video)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-                <div class="release d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 mb-3 p-2">
-                    <a href="https://open.spotify.com/album/3zMAIT03uuvFD29TzKHbNh?si=SBMFPSrARpiD17YRNXKBWg">
-                        <img src="images/knobhead-cover.png" alt="Man with a knob for a head burying something during a stormy night">
-                    </a>
-                    <div class="tracklist list-group list-group-flush w-100">
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/3NfLKnuYd04IBshhNPV5uL?si=0aa3f22faeb54fdd">Dirt Koffer (3:19)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/4FUomCsLo7EBkFfVKMv3nP?si=585e746b195641cb">Knobhead (2:22)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/5az394h3ZdRX5hDOJQVB1t?si=43fc1bdf2cae461a">Bollock Synthesizer (3:18)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/57EaVSTF0r8Hjb3pujJZfH?si=130e26cf855349e9">Suck Shit (2:04)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/75GXWM1EvqjuO4Ndha5s6Z?si=72f23daa5f8c4032">Buzzy Bees (3:44)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/0T2lgGLOkT3p3FQIZI7mUx?si=168f7db4d63044bb">Outdustrial (4:10)</a>
-                    </div>
-                </div>
+    <div id="about" class="d-flex flex-column w-75 justify-content-center align-items-center mb-3" style="margin: auto;">
+      <h1 class="section-header mb-3">WHO WE ARE</h1>
+      <div class="d-flex flex-row justify-content-center align-items-center">
+        <img
+          class="flex-item mr-3"
+          style="height: auto; width: 50%;"
+          src="images/band/about.jpg"
+          alt=""
+        />
+        <p class="flex-item" style="text-align: center; width: 50%;">
+          <strong>Sir Kingfish is an Ottawa-based band established in 2017 by four musicians: Kyle Maundrell, Maxx Brennan, Ronnie Cramp-Sharp, and Grant Dioguardi.
+          With Sir Kingfish producing rock, metal, punk, and jazz music, the eclectic band is not easily defined by any one genre.</strong>
+        </p>
+      </div>
+    </div>
 
-                <div class="release d-flex flex-column flex-lg-row align-items-center align-items-lg-start col-8 p-2">
-                    <a href="https://open.spotify.com/album/5SriEX4TSvgQ8wYU0ydLCu?si=vIMjmc8HTv2a2AR4B1LWRQ">
-                        <img src="images/mob-function-cover.png" alt="Emu using its beak like a turntable's needle">
-                    </a>
-                    <div class="tracklist list-group list-group-flush w-100">
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/2IKkJNJn7Gst3E9ZeD8LKq?si=4c791ac3b10d49cd">Soil Spitter (3:23)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/1ZMVsNQ6ERWiGiMU6NxGKo?si=23a9c58d36b745d0">Plan Man (4:06)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/7wSEy6bLgR9qmolJQ5uLnk?si=b96d9c20ec684a7d">Rutger's Rotors (3:16)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/183RHyH6QPtei6sB9Z3f4A?si=5b1597c13155474a">Crisp Rat (3:12)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/5FRiyvZNB3XvSxQFIvpiss?si=2ffa15da36754897">Meat Stalker (4:14)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/1wwFH5VkZ6gr3dN6zr800T?si=5cc943b15a704fbc">The Ghost of Parties Past (3:42)</a>
-                        <a class="list-group-item list-group-item-action" href="https://open.spotify.com/track/6DSy6k7FqB9cdiaunsp8z8?si=5f17a6236ea54a50">Emu (4:30)</a>
-                    </div>
-                </div>
-            </div>
+    <!-- TODO: Visitors should be able to download the tracks. -->
+    <div id="releases" class="container-fluid">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="section-header mb-3">LATEST RELEASES</h1>
+        <div class="d-flex flex-row justify-content-center w-75">
+          <iframe
+            class="mb-3"
+            src="https://open.spotify.com/embed/track/1yTot9qhLOlXTUkgZCHOMP?utm_source=generator&theme=0"
+            width="40%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </div>
+        <div class="d-flex flex-row justify-content-center w-75">
+          <iframe
+            class="mb-3 mr-3"
+            src="https://open.spotify.com/embed/track/4Y2TI6Fuv9542c6ds1LoTr?utm_source=generator&theme=0"
+            width="40%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
 
-        <!-- <div id="social" class="h-25 container-fluid">
-            <h1 style="text-align: center;">SOCIAL</h1>
-            <div class="">
-                <p>COMING SOON</p>
-            </div>
+          <iframe
+            class="mb-3"
+            src="https://open.spotify.com/embed/track/3AkTCAUvCH8syzuAjf8OS7?utm_source=generator&theme=0"
+            width="40%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </div>
+        <div class="d-flex flex-row justify-content-center w-75">
+          <iframe
+            class="mb-3 mr-3"
+            src="https://open.spotify.com/embed/track/3AUZ8wT2sLbmpl06lg9O8i?utm_source=generator&theme=0"
+            width="40%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
 
-        <div id="gallery" class="h-25 container-fluid">
-            <h1 style="text-align: center;">GALLERY</h1>
-            <div class="">
-                <p>COMING SOON</p>
-            </div>
-        </div> -->
-
-        <div id="footer" class="container-fluid">
-            <p class="m-0 p-2">&copy; SIR KINGFISH 2024</p>
+          <iframe
+            class="mb-3"
+            src="https://open.spotify.com/embed/track/1t77m46fzxTKLhiWUcpI6n?utm_source=generator&theme=0"
+            width="40%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </div>
+      </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+      <h1 class="section-header mb-3">OLDIES</h1>
+
+      <div id="oldies" class="carousel slide mb-3" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#oldies" data-slide-to="0" class="active"></li>
+          <li data-target="#oldies" data-slide-to="1"></li>
+          <li data-target="#oldies" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://open.spotify.com/album/6jlAXeX2pZyOdXv6od9TZe?si=d9wvJXfySdO9sJM9iyio6w"
+            >
+              <img
+                class="d-block w-50 cover"
+                src="images/covers/froots-cover.jpg"
+                alt="Poorly drawn fruit bowl"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/album/3zMAIT03uuvFD29TzKHbNh?si=SBMFPSrARpiD17YRNXKBWg"
+            >
+              <img
+                class="d-block w-50 cover"
+                src="images/covers/knobhead-cover.png"
+                alt="Man with a knob for a head burying something during a stormy night"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/album/5SriEX4TSvgQ8wYU0ydLCu?si=vIMjmc8HTv2a2AR4B1LWRQ"
+            >
+              <img
+                class="d-block w-50 cover"
+                src="images/covers/mob-function-cover.png"
+                alt="Emu using its beak like a turntable's needle"
+              />
+            </a>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#oldies"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#oldies"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div
+      id="gallery"
+      class="d-flex flex-column justify-content-center align-items-center mb-3"
+    >
+      <h1 class="section-header mb-3">GALLERY</h1>
+      <div class="d-flex flex-row w-75">
+        <img src="images/band/1.JPG" alt="" />
+        <img src="images/band/2.JPG" alt="" />
+      </div>
+      <div class="d-flex flex-row w-75">
+        <img src="images/band/3.JPG" alt="" />
+        <img src="images/band/4.JPG" alt="" />
+        <img src="images/band/5.JPG" alt="" />
+        <img src="images/band/6.JPG" alt="" />
+      </div>
+    </div>
+
+    <div id="contact" class="mb-3" style="height: 200px">
+      <h1 class="section-header mb-3">CONTACT</h1>
+      <div
+        class="d-flex flex-row justify-content-center align-items-center"
+        style="min-height: 75%"
+      >
+        <h2 class="section-header mb-3">
+          FOR ALL BUSINESS INQUIRIES: sirkingfish.mgmt@gmail.com
+        </h2>
+      </div>
+    </div>
+
+    <div id="footer" class="container-fluid">
+      <p class="m-0 p-2">&copy; SIR KINGFISH 2025</p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

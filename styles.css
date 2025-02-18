@@ -1,60 +1,75 @@
-html, body {
-    height: fit-content;
+html,
+body {
+  height: fit-content;
 }
 
-.release a, img {
-    width: 100%;
+.release a,
+img {
+  width: 100%;
 }
 
 body,
 .navbar {
-    background-color: #02020B;
-    color: #F4F4F6
+  background-color: #02020b;
+  color: #f4f4f6;
 }
 
 .navbar-brand {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .nav-item.enabled {
-    color: #F4F4F6 !important;
+  color: #f4f4f6 !important;
 }
 
 .section-header {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .release,
 .tracklist a {
-    background-color: #F4F4F6;
-    color: #212529;
+  background-color: #f4f4f6;
+  color: #212529;
 }
 
 .release {
-    gap: .5em;
+  gap: 0.5em;
+}
+
+.cover {
+  margin: auto;
 }
 
 .tracklist a {
-    border: none;
-    font-weight: bold;
-    text-align: center;
+  border: none;
+  font-weight: bold;
+  text-align: center;
 }
 
 #footer p {
-    text-align: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
-    .tracklist {
-        overflow-y: scroll;
-        height: 314px;
-    }
+  .tracklist {
+    overflow-y: scroll;
+    height: 314px;
+  }
 }
 
 @media only screen and (max-width: 990px) {
-    .tracklist {
-        overflow-y: scroll;
-        height: 200px;
-    }
+  .tracklist {
+    overflow-y: scroll;
+    height: 200px;
+  }
+}
+
+/* Bootstrap Overrides */
+#oldies .carousel-control-prev {
+  left: 500px;
+}
+
+#oldies .carousel-control-next {
+  right: 500px;
 }
