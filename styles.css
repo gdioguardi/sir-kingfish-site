@@ -69,6 +69,11 @@ body,
   width: 25%;
 }
 
+#releases iframe,
+#releases .singles {
+  width: 75%;
+}
+
 @media only screen and (max-width: 1200px) {
   .tracklist {
     overflow-y: scroll;
