@@ -3,6 +3,11 @@ body {
   height: fit-content;
 }
 
+#about img,
+#about p {
+  width: 50%;
+}
+
 .release a,
 img {
   width: 100%;
@@ -51,6 +56,19 @@ body,
   text-align: center;
 }
 
+/* Bootstrap Overrides */
+#oldies .carousel-control-prev {
+  left: 10%;
+}
+
+#oldies .carousel-control-next {
+  right: 10%;
+}
+
+#individuals img {
+  width: 25%;
+}
+
 @media only screen and (max-width: 1200px) {
   .tracklist {
     overflow-y: scroll;
@@ -59,17 +77,25 @@ body,
 }
 
 @media only screen and (max-width: 990px) {
+  #individuals img {
+    width: 50%;
+  }
+
+  #about img,
+  #about p {
+    width: 100%;
+  }
+
   .tracklist {
     overflow-y: scroll;
     height: 200px;
   }
-}
 
-/* Bootstrap Overrides */
-#oldies .carousel-control-prev {
-  left: 500px;
-}
+  #releases iframe {
+    width: 100%;
+  }
 
-#oldies .carousel-control-next {
-  right: 500px;
+  #releases .singles {
+    width: 100%;
+  }
 }
