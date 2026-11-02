@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'FreckleFace-Regular';
-    src: url('FreckleFace-Regular.ttf') format('truetype');
+  font-family: 'RubikPuddles-Regular';
+  src: url('RubikPuddles-Regular.ttf') format('truetype');
 }
 
 html,
@@ -9,8 +9,8 @@ body {
 }
 
 body {
-    background-image: url('../images/background/pink-sludge.png');
-    background-repeat: repeat;
+  background-image: url('../images/background/pink-sludge.png');
+  background-repeat: repeat;
 }
 
 #about img,
@@ -35,7 +35,7 @@ img {
 
 body,
 .navbar {
-  background-color: #02020b;
+  background-color: #8c239c;
   color: #f4f4f6;
 }
 
@@ -45,14 +45,21 @@ body,
 }
 
 .nav-item.enabled {
-  color: #f4f4f6 !important;
+  color: #50d52f !important;
 }
 
 .section-header {
   text-align: center;
   font-weight: bold;
-  font-size: 8em;
-  font-family: 'FreckleFace-Regular', monospace;
+  font-size: 6em;
+  font-family: 'RubikPuddles-Regular', monospace;
+}
+
+mark {
+  background-color: #8c239c;
+  color: #50d52f;
+  padding: 4px;
+  border-radius: 2px;
 }
 
 .release,
