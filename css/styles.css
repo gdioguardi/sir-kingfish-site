@@ -1,6 +1,16 @@
+@font-face {
+    font-family: 'FreckleFace-Regular';
+    src: url('FreckleFace-Regular.ttf') format('truetype');
+}
+
 html,
 body {
   height: fit-content;
+}
+
+body {
+    background-image: url('../images/background/pink-sludge.png');
+    background-repeat: repeat;
 }
 
 #about img,
@@ -42,6 +52,7 @@ body,
   text-align: center;
   font-weight: bold;
   font-size: 8em;
+  font-family: 'FreckleFace-Regular', monospace;
 }
 
 .release,
