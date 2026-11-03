@@ -3,28 +3,69 @@
   src: url('RubikPuddles-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Quantico-Bold';
+  src: url('Quantico-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Quantico-BoldItalic';
+    src: url('Quantico-BoldItalic.ttf') format('truetype');
+}
+
 html,
 body {
   height: fit-content;
 }
 
 body {
-  background-image: url('../images/background/pink-sludge.png');
+  background-image: url('../images/style/pink-sludge.png');
   background-repeat: repeat;
+  font-family: 'Quantico-Bold', monospace;
+}
+
+h1 {
+  font-family: 'RubikPuddles-Regular', monospace;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+    color: #ff52b1;
 }
 
 #about img,
 #about p {
   width: 65%;
+  border: 5px ridge #2cc324;
 }
 
 #about p {
   font-size: 1.5em;
+  padding: 0.5em;
+  background-color: #8c239c;
+  border: 8px ridge #2cc324;
 }
 
 .release a,
 img {
   width: 100%;
+}
+
+iframe {
+    background-color: #8c239c;
+}
+
+.youtube {
+  border: 8px ridge #2cc324;
+}
+
+#releases .singles {
+  border: 5px ridge #2cc324;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .embed-responsive {
@@ -33,10 +74,18 @@ img {
   width: 75%;
 }
 
+.gallery {
+    border: 8px ridge #2cc324;
+}
+
 body,
 .navbar {
   background-color: #8c239c;
   color: #f4f4f6;
+}
+
+.img-fluid {
+  max-width: 12em;
 }
 
 .navbar-brand {
@@ -46,13 +95,14 @@ body,
 
 .nav-item.enabled {
   color: #50d52f !important;
+  font-size: 2em;
+  font-family: 'Quantico-BoldItalic';
 }
 
 .section-header {
   text-align: center;
   font-weight: bold;
   font-size: 6em;
-  font-family: 'RubikPuddles-Regular', monospace;
 }
 
 mark {
@@ -62,14 +112,14 @@ mark {
   border-radius: 2px;
 }
 
+.mb-3 {
+
+}
+
 .release,
 .tracklist a {
   background-color: #f4f4f6;
   color: #212529;
-}
-
-.release {
-  gap: 0.5em;
 }
 
 .cover {
@@ -99,10 +149,13 @@ mark {
   width: 25%;
 }
 
-#releases iframe,
 #releases .singles {
   width: 75%;
 }
+
+/*#releases iframe {
+  width: 100%;
+}*/
 
 @media only screen and (max-width: 1200px) {
   .tracklist {
