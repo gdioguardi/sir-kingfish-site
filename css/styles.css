@@ -1,16 +1,11 @@
 @font-face {
-  font-family: 'RubikPuddles-Regular';
-  src: url('RubikPuddles-Regular.ttf') format('truetype');
+    font-family: 'KosugiMaru-Regular';
+    src: url('KosugiMaru-Regular') format('truetype');
 }
 
 @font-face {
-  font-family: 'Quantico-Bold';
-  src: url('Quantico-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Quantico-BoldItalic';
-    src: url('Quantico-BoldItalic.ttf') format('truetype');
+    font-family: 'Jersey10-Regular';
+    src: url('Jersey10-Regular.ttf') format('truetype');
 }
 
 html,
@@ -21,11 +16,11 @@ body {
 body {
   background-image: url('../images/style/pink-sludge.png');
   background-repeat: repeat;
-  font-family: 'Quantico-Bold', monospace;
+  font-family: 'KosugiMaru-Regular', monospace;
 }
 
 h1 {
-  font-family: 'RubikPuddles-Regular', monospace;
+  font-family: 'Jersey10-Regular', monospace;
 }
 
 h2 {
@@ -78,14 +73,33 @@ iframe {
     border: 8px ridge #2cc324;
 }
 
-body,
-.navbar {
-  background-color: #8c239c;
-  color: #f4f4f6;
-}
-
 .img-fluid {
   max-width: 12em;
+}
+
+.custom-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.custom-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1440 / 176;
+  background: url('../images/style/sludge-nav.png') top center / 100% 100% no-repeat;
+  pointer-events: none;
+  z-index: -1; /*drippy image goes behind links on navbar*/
 }
 
 .navbar-brand {
@@ -96,7 +110,7 @@ body,
 .nav-item.enabled {
   color: #50d52f !important;
   font-size: 2em;
-  font-family: 'Quantico-BoldItalic';
+  font-family: 'Jersey10-Regular';
 }
 
 .section-header {
@@ -110,10 +124,6 @@ mark {
   color: #50d52f;
   padding: 4px;
   border-radius: 2px;
-}
-
-.mb-3 {
-
 }
 
 .release,
@@ -152,10 +162,6 @@ mark {
 #releases .singles {
   width: 75%;
 }
-
-/*#releases iframe {
-  width: 100%;
-}*/
 
 @media only screen and (max-width: 1200px) {
   .tracklist {
