@@ -42,6 +42,7 @@ p {
 #about p {
   width: 65%;
   border: 8px ridge #2cc324;
+  border-radius: 12px;
 }
 
 #about p {
@@ -49,6 +50,7 @@ p {
   padding: 0.5em;
   background-color: #2cc324;
   border: 8px ridge #2cc324;
+  border-radius: 12px;
 }
 
 .release a,
@@ -62,10 +64,11 @@ iframe {
 
 .youtube {
   border: 8px ridge #2cc324;
+  border-radius: 12px;
 }
 
 #releases .singles {
-  border: 5px ridge #2cc324;
+  border: 8px ridge #2cc324;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -78,10 +81,21 @@ iframe {
 
 .gallery {
     border: 8px ridge #2cc324;
+    border-radius: 12px;
 }
 
+.gallery-box {
+    gap: 10px;
+    padding: 5px 0px;
+}
+
+/*.copyright {
+    color: #2cc324;
+    font-weight: bold;
+}*/
+
 .img-fluid {
-  max-width: 12em;
+    max-width: 12em;
 }
 
 .custom-nav {
@@ -129,7 +143,7 @@ iframe {
 mark {
   background-color: #8c239c;
   color: #50d52f;
-  padding: 4px;
+  padding: 6px;
   border-radius: 2px;
 }
 
