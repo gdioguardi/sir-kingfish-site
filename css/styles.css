@@ -8,6 +8,11 @@
     src: url('Jersey10-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'tetri';
+    src: url('tetri.ttf') format('truetype');
+}
+
 html,
 body {
   height: fit-content;
