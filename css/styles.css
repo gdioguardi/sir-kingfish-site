@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'KosugiMaru-Regular';
-    src: url('KosugiMaru-Regular') format('truetype');
+    src: url('KosugiMaru-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -26,6 +26,8 @@ body {
 
 h1 {
   font-family: 'Jersey10-Regular', monospace;
+  color: #2cc324;
+  text-shadow: 5px 5px #145400;
 }
 
 h2 {
@@ -33,19 +35,19 @@ h2 {
 }
 
 p {
-    color: #ff52b1;
+    color: #145400;
 }
 
 #about img,
 #about p {
   width: 65%;
-  border: 5px ridge #2cc324;
+  border: 8px ridge #2cc324;
 }
 
 #about p {
   font-size: 1.5em;
   padding: 0.5em;
-  background-color: #8c239c;
+  background-color: #2cc324;
   border: 8px ridge #2cc324;
 }
 
